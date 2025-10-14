@@ -12,8 +12,10 @@ namespace FluffinDugzBookingPage
     /// </summary>
     public partial class BookingForm : Form
     {
-        // Connection string to access the database
-        private string connectionString = "server=localhost;database=FluffinDugzDB;user=root;password=;";
+        // NOTE: Connection string has been modified for security purposes.
+        // Replace 'your_database', 'your_username', and 'your_password' with your own local credentials when running the project.
+        MySqlConnection connect = new MySqlConnection("server=localhost;database=your_database;uid=your_username;pwd=your_password;");
+
 
         public BookingForm()
         {
